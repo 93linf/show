@@ -12,4 +12,5 @@ S= n+ m+ l ,按照S的值将(n, m, l)的组合分类,同类的所有组合可以
 f(n,0,0)=2<sup>n</sup>能交错到的最下层是math.floor ( log<sub>5</sub>2<sup>n</sup> ),
 也就是类似取第K个素数去生成素数表的思路,但按照S<sub>i</sub> =x 从0-->infinity依次产生(n,m,l)时,S<sub>i</sub>和S<sub>j</sub>会交错,
 算到S<sub>x</sub>时,可认为 n= math.floor ( log<sub>5</sub>2<sup>n</sup> ),m=0,l=0,之前的(m,n,l)已经排好了,不会有交错了
++ 在最新版的pychrm IDE 函数中import不会提示不规范
 + 待更新
