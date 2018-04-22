@@ -9,8 +9,8 @@
 + 不优美的一种方法,不确定算不算穷举,
 S= n+ m+ l ,按照S的值将(n, m, l)的组合分类,同类的所有组合可以按照2 --> 3 --> 5 的优先级排序生成，也就是我面试说的“从高到低流向“，
 这样可以合并有序序列，O(logN),也就是能排好所有 {(n, m, l) |(n, m, l) ∈ S<sub>i</sub> ,S<sub>i</sub> ≤S},
-f(n,0,0)=2<sup>n</sup>能交错到的最下层是math.floor ( log<sub>5</sub>2<sup>n</sup> ),
+f(n,0,0)=2<sup>n</sup>能交错到的最下层是math.ceil ( log<sub>5</sub>2<sup>n</sup> ),
 也就是类似取第K个素数去生成素数表的思路,但按照S<sub>i</sub> =x 从0-->infinity依次产生(n,m,l)时,S<sub>i</sub>和S<sub>j</sub>会交错,
-算到S<sub>x</sub>时,可认为 n= math.floor ( log<sub>5</sub>2<sup>n</sup> ),m=0,l=0,之前的(m,n,l)已经排好了,不会有交错了
+算到S<sub>x</sub>时,可认为 n= math.ceil ( log<sub>5</sub>2<sup>S<sub>x</sub></sup> ),m=0,l=0,及之前的(m,n,l)已经排好了,不会有交错了
 + 在最新版的pychrm IDE 函数中import不会提示不规范
 + 待更新
